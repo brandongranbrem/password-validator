@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CSCI3130Assignment2.iml" filepath="$PROJECT_DIR$/CSCI3130Assignment2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/password-validator.iml" filepath="$PROJECT_DIR$/password-validator.iml" />
     </modules>
   </component>
