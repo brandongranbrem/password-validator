@@ -6,6 +6,13 @@ package com.app.brandon.csci3130assignment2;
 
 public class PasswordStrengthValidator {
     public int validate(String password){
-        return 0;
+        int numRulesPassed = 0;
+        if(!password.equals("password")){
+            numRulesPassed++;
+        }
+        if(password.length() >=8){
+            numRulesPassed++;
+        }
+        return numRulesPassed;
     }
 }

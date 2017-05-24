@@ -15,7 +15,10 @@ public class ExampleUnitTest {
         PasswordStrengthValidator validator = new PasswordStrengthValidator();
         String password1 = "password";
         String password2 = "pass";
+        String password3 = "passwords";
+
         assertEquals(1, validator.validate(password1));
         assertEquals(1, validator.validate(password2));
+        assertEquals(2, validator.validate(password3));
     }
 }
