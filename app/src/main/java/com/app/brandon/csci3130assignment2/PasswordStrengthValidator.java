@@ -19,6 +19,18 @@ public class PasswordStrengthValidator {
         if(password.length() >=8){
             numRulesPassed++;
         }
+        //Check 3: Ensure password contains at least one number
+        if(password.matches(".*[0-9].*")){
+            numRulesPassed++;
+        }
+        //Check 4: Ensure password contains at least one uppercase letter
+        if(password.matches(".*[A-Z].*")){
+            numRulesPassed++;
+        }
+        //Check 5: Ensure password contains at least one special character
+        if(password.matches(".*[^A-Za-z0-9].*")){
+            numRulesPassed++;
+        }
         //Return the number of checks the password met
         return numRulesPassed;
     }
