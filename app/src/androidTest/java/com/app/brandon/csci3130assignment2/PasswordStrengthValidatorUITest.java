@@ -49,7 +49,7 @@ public class PasswordStrengthValidatorUITest {
 
         ViewInteraction textView = onView(
                 allOf(withId(R.id.passwordStrengthMessage), isDisplayed()));
-        textView.check(matches(withText("Test the strength of your password!")));
+        textView.check(matches(withText("Password is Weak!")));
 
         ViewInteraction appCompatEditText3 = onView(
                 allOf(withId(R.id.inputPassword), isDisplayed()));
@@ -65,7 +65,7 @@ public class PasswordStrengthValidatorUITest {
 
         ViewInteraction textView2 = onView(
                 allOf(withId(R.id.passwordStrengthMessage), isDisplayed()));
-        textView2.check(matches(withText("Test the strength of your password!")));
+        textView2.check(matches(withText("Password is Weak!")));
 
         ViewInteraction appCompatEditText5 = onView(
                 allOf(withId(R.id.inputPassword), isDisplayed()));
@@ -81,7 +81,7 @@ public class PasswordStrengthValidatorUITest {
 
         ViewInteraction textView3 = onView(
                 allOf(withId(R.id.passwordStrengthMessage), isDisplayed()));
-        textView3.check(matches(withText("Test the strength of your password!")));
+        textView3.check(matches(withText("Password is Strong!")));
 
     }
 
