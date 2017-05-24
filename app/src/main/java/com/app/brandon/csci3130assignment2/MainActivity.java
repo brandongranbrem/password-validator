@@ -30,8 +30,11 @@ public class MainActivity extends AppCompatActivity {
         validate.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                //Get the password inputted by user
                 String verifyPassword = password.getText().toString();
+                //Determine the strength of the password (1-4: Weak, 5 Strong)
                 int strength = validator.validate(verifyPassword);
+                //Display message in textview based on the strength
                 if(strength ==5){
                     message.setText("Password is Strong!");
                 }
